@@ -58,14 +58,15 @@ export const RightContainer = styled.div`
   display: flex;
   margin-left: 300px;
 `;
-
-export const TicksContainer = styled.div`
-  width: 60%;
+export const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: -350px;
-  margin-top: 30px;
+`;
+
+export const StarsAndImageContainer = styled.div`
+  display: flex;
+  align-items: center;
 `;
 
 export const SocialMediaContainer = styled.div`
@@ -75,6 +76,7 @@ export const SocialMediaContainer = styled.div`
   justify-content: center; /* Align items in the center */
   margin-top: 50px;
   margin-right: 00px;
+  margin-left: 200px;
 `;
 
 export const ServiceTitle = styled.h3`
@@ -93,8 +95,9 @@ export const ServiceItem = styled.p`
   display: flex;
   align-items: center;
   font-size: 16px;
-  margin-bottom: 5px;
-  margin-left: 10px;
+  margin-top: 50px;
+  margin-bottom: 15px;
+  margin-left: -10px;
 `;
 
 export const IconBox = styled.div`
@@ -121,8 +124,10 @@ export const StarIcon = styled(FaStar)`
   margin-bottom: -100 px;
 `;
 export const SocialMediaRow = styled.div`
-  display: flex;
+  display: flexbox;
   margin-top: 10px;
+  display: center;
+  /* margin-left: 100px; */
 `;
 
 export const GoogleIcon = styled(FaGoogle)`

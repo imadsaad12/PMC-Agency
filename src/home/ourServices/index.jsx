@@ -7,7 +7,7 @@ import {
   Button,
   LeftContainer,
   RightContainer,
-  TicksContainer,
+  ContentContainer,
   SocialMediaContainer,
   ServiceTitle,
   ServiceItem,
@@ -21,6 +21,8 @@ import {
   TiktokIcon,
   SnapchatIcon,
   ImageHolder,
+  SocialMediaRow,
+  StarsAndImageContainer,
 } from "./styles";
 import {
   ourServices,
@@ -48,18 +50,18 @@ export default function OurServices() {
         <Button onClick={handleButtonClick}>{getStarted}</Button>
       </LeftContainer>
       <RightContainer>
-        <div>
-          <ImageHolder></ImageHolder>
-        </div>
+        <ContentContainer>
+          <StarsAndImageContainer>
+            <ImageHolder></ImageHolder>
 
-        <TicksContainer>
-          <div>
+            {/* <TicksContainer> */}
+
             <StarIcon />
             <StarIcon />
             <StarIcon />
             <StarIcon />
             <StarIcon />
-          </div>
+          </StarsAndImageContainer>
           <ServiceTitle>{paidAdvertising}</ServiceTitle>
           <div>
             <ServiceItem>
@@ -79,9 +81,9 @@ export default function OurServices() {
               {videoProduction}
             </ServiceItem>
           </div>
-        </TicksContainer>
+        </ContentContainer>
         <SocialMediaContainer>
-          <div>
+          <SocialMediaRow>
             <IconBox>
               <GoogleIcon />
             </IconBox>
@@ -91,8 +93,8 @@ export default function OurServices() {
             <IconBox>
               <InstagramIcon />
             </IconBox>
-          </div>
-          <div>
+          </SocialMediaRow>
+          <SocialMediaRow>
             <IconBox>
               <FacebookIcon />
             </IconBox>
@@ -102,7 +104,7 @@ export default function OurServices() {
             <IconBox>
               <SnapchatIcon />
             </IconBox>
-          </div>
+          </SocialMediaRow>
         </SocialMediaContainer>
       </RightContainer>
     </Container>
