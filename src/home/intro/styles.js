@@ -9,3 +9,4 @@ export const Text = styled.p`
   font-size: 20px;
   color: white;
 `;
+
