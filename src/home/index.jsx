@@ -7,9 +7,6 @@ export default function Home() {
     <Container>
       <Intro />
       <Intro />
-      <Intro />
-      <Intro />
-      <Intro />
     </Container>
   );
 }

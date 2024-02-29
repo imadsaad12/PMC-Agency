@@ -1,10 +1,18 @@
 import React from "react";
-import { Container, Text } from "./styles";
+import { Body, Container, Divider } from "./styles";
+import Header from "./header";
+import LeftSection from "./leftSection";
+import RightSection from "./rightSection";
 
 export default function Intro() {
   return (
     <Container>
-      <Text>Hello world</Text>
+      <Header />
+      <Divider />
+      <Body>
+        <LeftSection />
+        <RightSection />
+      </Body>
     </Container>
   );
 }
