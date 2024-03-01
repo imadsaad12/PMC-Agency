@@ -16,8 +16,8 @@ export const Logo = styled.img`
   height: 80px;
   border-radius: 15px;
   @media (max-width: 770px) {
-    width: 70px;
-    height: 60px;
+    width: 55px;
+    height: 50px;
   }
 `;
 
