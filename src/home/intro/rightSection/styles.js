@@ -1,13 +1,23 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 50%;
+  width: 40%;
+  margin-right: 5%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  height: 70vh;
+  height: 60vh;
   padding-bottom: 20px;
+  position: relative;
+  @media (max-width: 770px) {
+    align-self: center;
+    justify-content: center;
+    margin-right: 0px;
+    flex-direction: column;
+    width: 90%;
+    margin-top: 50px;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -15,6 +25,10 @@ export const ImageContainer = styled.div`
   width: 250px;
   height: 400px;
   border-radius: 10px;
+  @media (max-width: 770px) {
+    width: 150px;
+    width: 150px;
+  }
 `;
 
 export const Image = styled.img`
@@ -30,6 +44,10 @@ export const SocialMediaIcon = styled.img`
   border-radius: 50%;
   left: -30px;
   top: 15px;
+  @media (max-width: 770px) {
+    width: 60px;
+    height: 60px;
+  }
 `;
 
 export const Text = styled.p`
@@ -39,4 +57,7 @@ export const Text = styled.p`
   font-family: Arial, Helvetica, sans-serif;
   text-align: right;
   line-height: 0px;
+  @media (max-width: 770px) {
+    font-size: 15px;
+  }
 `;

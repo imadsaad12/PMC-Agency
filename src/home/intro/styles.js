@@ -20,6 +20,10 @@ export const Body = styled.div`
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  @media (max-width: 770px) {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 `;
 
 export const Divider = styled.div`
@@ -29,4 +33,17 @@ export const Divider = styled.div`
   background-color: black;
   transform: rotate(15deg);
   left: 45%;
+`;
+
+export const EffectsTop = styled.img`
+  position: absolute;
+  top: -90px;
+  right: -390px;
+  transform: rotate(30deg);
+`;
+export const EffectsBottom = styled.img`
+  position: absolute;
+  bottom: -50px;
+  left: -400px;
+  transform: rotate(-150deg);
 `;

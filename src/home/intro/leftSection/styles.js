@@ -6,7 +6,11 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  z-index: 10;
   height: fit-content;
+  @media (max-width: 770px) {
+    width: 100%;
+  }
 `;
 
 export const SmallTittle = styled.p`

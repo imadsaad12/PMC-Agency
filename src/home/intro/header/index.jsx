@@ -9,6 +9,7 @@ import {
   MenuItem,
 } from "./styles";
 import logoSrc from "../../../static/logo.webp";
+import useBreakpoint from "../../../utilities/mediaQuery";
 
 export default function Header() {
   return (
