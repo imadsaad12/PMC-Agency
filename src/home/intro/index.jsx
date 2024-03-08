@@ -1,5 +1,20 @@
 import React from "react";
-import { Body, Container, Divider, EffectsTop, EffectsBottom } from "./styles";
+import {
+  Body,
+  Container,
+  Divider,
+  EffectsTop,
+  EffectsBottom,
+  StatisticsContainer,
+  ContentContainer,
+  ContentTitle,
+  Wrapper,
+  Numbers,
+  Description,
+  Button,
+  BottomText,
+  BottomSmallText,
+} from "./styles";
 import Header from "./header";
 import LeftSection from "./leftSection";
 import RightSection from "./rightSection";
@@ -18,6 +33,43 @@ export default function Intro() {
         <LeftSection />
         <RightSection />
       </Body>
+      <Wrapper>
+        <ContentTitle>More statistics</ContentTitle>
+        <StatisticsContainer>
+          <ContentContainer>
+            <ContentTitle style={{ marginLeft: !isSmallScreen && "40px" }}>
+              Total ROI
+            </ContentTitle>
+            <Numbers style={{ marginLeft: !isSmallScreen && "40px" }}>
+              $100,000+
+            </Numbers>
+            <Description style={{ marginLeft: "40px" }}>
+              Returns on investment <br />
+              for clients
+            </Description>
+            <Button>Apply now</Button>
+          </ContentContainer>
+          <ContentContainer style={{ height: "50%", justifyContent: "center" }}>
+            <Numbers style={{ alignSelf: "center" }}>$10,000+</Numbers>
+            <Description style={{ alignSelf: "center" }}>
+              Daily Ad spend
+            </Description>
+          </ContentContainer>
+          <ContentContainer style={{ height: "50%", justifyContent: "center" }}>
+            <Numbers style={{ alignSelf: "center" }}>15+</Numbers>
+            <Description style={{ alignSelf: "center" }}>
+              Clients Served
+            </Description>
+          </ContentContainer>
+        </StatisticsContainer>
+      </Wrapper>
+      <BottomText>
+        we've worked with industry
+        <br /> leading brands.
+      </BottomText>
+      <BottomSmallText>
+        In recognition of consistently generating exceptional client results.
+      </BottomSmallText>
     </Container>
   );
 }
