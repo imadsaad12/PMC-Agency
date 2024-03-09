@@ -2,13 +2,14 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   margin: 20px;
+  margin-left: 120px;
 `;
 export const Title = styled.h1`
   color: purple;
   font-size: 22px; /* Default font size */
 
   @media (max-width: 770px) {
-    font-size: 8px; /* Adjust font size for smaller screens */
+    font-size: 14px; /* Adjust font size for smaller screens */
   }
 `;
 export const LeftContainer = styled.div`
@@ -22,15 +23,18 @@ export const LeftContainer = styled.div`
 export const LeftImage = styled.img`
   width: 600px;
   height: 400px;
-  border-radius: 10px;
   @media (max-width: 770px) {
-    width: 150px;
+    width: 250px;
     height: 150px;
   }
 `;
 
 export const LeftDescription = styled.p`
   /* text-align: center; */
+  font-weight: bold;
+  @media (max-width: 770px) {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
 `;
 
 export const RightContainer = styled.div`
@@ -44,13 +48,16 @@ export const RightContainer = styled.div`
 export const RightImage = styled.img`
   width: 600px;
   height: 400px;
-  border-radius: 10px;
   @media (max-width: 770px) {
-    width: 150px;
+    width: 250px;
     height: 150px;
   }
 `;
 
 export const RightDescription = styled.p`
   /* text-align: center; */
+  font-weight: bold;
+  @media (max-width: 770px) {
+    font-size: 12px; /* Adjust font size for smaller screens */
+  }
 `;
