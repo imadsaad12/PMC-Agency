@@ -6,6 +6,7 @@ import {
   SmallText,
   SmallTittle,
 } from "./styles";
+import { Link } from "react-scroll";
 
 export default function LeftSection() {
   return (
@@ -24,7 +25,9 @@ export default function LeftSection() {
         We're omni-channel digital advertising growth <br />
         experts focused on outcome-based results
       </SmallText>
-      <Button>start application</Button>
+      <Link to={"form"} smooth duration={1000} offset={-100}>
+        <Button>start application</Button>
+      </Link>
     </Container>
   );
 }

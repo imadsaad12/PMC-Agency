@@ -66,4 +66,5 @@ export const Button = styled.button`
   border: 2px solid #8e3aa9;
   background-color: transparent;
   margin-bottom: 20px;
+  color: black;
 `;

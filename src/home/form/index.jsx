@@ -30,14 +30,12 @@ export default function Form() {
       "We will get back to you as soon as possible.\n\n" +
       "Best regards,\nYour Marketing Agency";
 
-    // Set the subject and body in the email link
     var mailtoLink =
       "mailto:your@email.com?subject=" +
       encodeURIComponent(subject) +
       "&body=" +
       encodeURIComponent(body);
 
-    // Open the user's default email client with the pre-filled subject and body
     window.location.href = mailtoLink;
   };
 

@@ -20,6 +20,7 @@ import LeftSection from "./leftSection";
 import RightSection from "./rightSection";
 import effect from "../../static/s.svg";
 import useBreakpoint from "../../utilities/mediaQuery";
+import { Link } from "react-scroll";
 
 export default function Intro() {
   const isSmallScreen = useBreakpoint(770);
@@ -47,7 +48,9 @@ export default function Intro() {
               Returns on investment <br />
               for clients
             </Description>
-            <Button>Apply now</Button>
+            <Link to={"form"} smooth duration={1000} offset={-100}>
+              <Button>Apply now</Button>
+            </Link>
           </ContentContainer>
           <ContentContainer style={{ height: "50%", justifyContent: "center" }}>
             <Numbers style={{ alignSelf: "center" }}>$10,000+</Numbers>
