@@ -10,6 +10,7 @@ import {
 } from "./styles";
 import logoSrc from "../../../static/logo.webp";
 import useBreakpoint from "../../../utilities/mediaQuery";
+import { Link } from "react-scroll";
 
 export default function Header() {
   return (
@@ -21,9 +22,15 @@ export default function Header() {
         </CompanyName>
       </LogoContainer>
       <MenuContainer>
-        <MenuItem>About</MenuItem>
-        <MenuItem>Latest studies</MenuItem>
-        <Button>Apply Now</Button>
+        <Link to={"services"} smooth duration={1000} offset={-100}>
+          <MenuItem>About</MenuItem>
+        </Link>
+        <Link to={"case-studies"} smooth duration={1000} offset={-100}>
+          <MenuItem>Latest studies</MenuItem>
+        </Link>
+        <Link to={"form"} smooth duration={1000} offset={-100}>
+          <Button>Apply Now</Button>
+        </Link>
       </MenuContainer>
     </Container>
   );

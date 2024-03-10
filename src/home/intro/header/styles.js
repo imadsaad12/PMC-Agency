@@ -28,6 +28,7 @@ export const LogoContainer = styled.div`
   color: white;
   gap: 20px;
   line-height: 25px;
+
   @media (max-width: 770px) {
     line-height: 17px;
     gap: 10px;

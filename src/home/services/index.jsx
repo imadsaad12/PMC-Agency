@@ -5,7 +5,7 @@ import RightSection from "./rightSection";
 
 export default function Services() {
   return (
-    <Container>
+    <Container id="services">
       <LeftSection />
       <RightSection />
     </Container>
