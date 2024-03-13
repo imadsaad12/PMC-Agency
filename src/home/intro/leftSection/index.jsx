@@ -13,11 +13,8 @@ export default function LeftSection() {
     <Container>
       <SmallTittle>Outcome driven</SmallTittle>
       <MainTittle>
-        Your DTC <br />
-        Partner
-        <br /> For
-        <br />
-        Digital
+        Your DTC Partner <br />
+        For Digital
         <br />
         Success
       </MainTittle>

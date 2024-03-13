@@ -44,11 +44,21 @@ export default function Intro() {
             <Numbers style={{ marginLeft: !isSmallScreen && "40px" }}>
               $100,000+
             </Numbers>
-            <Description style={{ marginLeft: "40px" }}>
+            <Description
+              style={{
+                marginLeft: !isSmallScreen && "40px",
+              }}
+            >
               Returns on investment <br />
               for clients
             </Description>
-            <Link to={"form"} smooth duration={1000} offset={-100}>
+            <Link
+              to={"form"}
+              smooth
+              duration={1000}
+              offset={-100}
+              style={{ width: "50%" }}
+            >
               <Button>Apply now</Button>
             </Link>
           </ContentContainer>

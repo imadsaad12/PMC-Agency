@@ -127,7 +127,7 @@ export const Description = styled.p`
 `;
 
 export const Button = styled.button`
-  width: 50%;
+  width: 100%;
   background-color: #4a505b;
   border: 1px solid #d75eff;
   height: 35px;
@@ -150,7 +150,7 @@ export const BottomText = styled.p`
   text-transform: capitalize;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   @media (max-width: 770px) {
-    font-size: 25px;
+    font-size: 20px;
   }
 `;
 
