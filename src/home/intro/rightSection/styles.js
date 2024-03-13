@@ -11,12 +11,14 @@ export const Container = styled.div`
   padding-bottom: 20px;
   position: relative;
   @media (max-width: 770px) {
+    height: 70vh;
+    justify-content: space-between;
     align-self: center;
-    justify-content: center;
     margin-right: 0px;
     flex-direction: column;
     width: 90%;
-    margin-top: 50px;
+    margin-top: 15%;
+    gap: 100px;
   }
 `;
 
@@ -26,8 +28,6 @@ export const ImageContainer = styled.div`
   height: 400px;
   border-radius: 10px;
   @media (max-width: 770px) {
-    width: 150px;
-    width: 150px;
   }
 `;
 

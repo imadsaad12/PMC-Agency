@@ -18,12 +18,14 @@ export default function RightSection() {
 
   return (
     <Container>
-      <ImageContainer style={{ alignSelf: "flex-end", height: "250px" }}>
+      <ImageContainer
+        style={{ alignSelf: !isSmallScreen && "flex-end", height: "250px" }}
+      >
         <Text>182%+</Text>
         <Image src={shoes} />
         <SocialMediaIcon src={youtube} />
       </ImageContainer>
-      <ImageContainer style={{ alignSelf: "flex-start" }}>
+      <ImageContainer style={{ alignSelf: !isSmallScreen && "flex-start" }}>
         <Image src={drink} />
         <SocialMediaIcon
           src={tiktok}
