@@ -12,6 +12,7 @@ export const Container = styled.div`
   position: relative;
   @media (max-width: 770px) {
     height: 70vh;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-self: center;
     margin-right: 0px;
@@ -42,8 +43,8 @@ export const SocialMediaIcon = styled.img`
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  left: -30px;
-  top: 15px;
+  left: -35px;
+  top: 50px;
   @media (max-width: 770px) {
     width: 60px;
     height: 60px;
@@ -54,6 +55,7 @@ export const Text = styled.p`
   color: #a744c8;
   font-weight: bold;
   font-size: 22px;
+  bottom: 0;
   font-family: Arial, Helvetica, sans-serif;
   text-align: right;
   line-height: 0px;

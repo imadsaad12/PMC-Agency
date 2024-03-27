@@ -5,6 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  right: 0;
   width: 45%;
   @media (max-width: 770px) {
     width: 100%;

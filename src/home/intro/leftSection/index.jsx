@@ -23,7 +23,7 @@ export default function LeftSection() {
         experts focused on outcome-based results
       </SmallText>
       <Link to={"form"} smooth duration={1000} offset={-100}>
-        <Button>start application</Button>
+        <Button>Start Application</Button>
       </Link>
     </Container>
   );

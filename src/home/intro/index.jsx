@@ -4,23 +4,14 @@ import {
   Container,
   Divider,
   EffectsTop,
-  EffectsBottom,
-  StatisticsContainer,
-  ContentContainer,
-  ContentTitle,
-  Wrapper,
-  Numbers,
-  Description,
-  Button,
-  BottomText,
-  BottomSmallText,
+  EffectsBottom
 } from "./styles";
+
 import Header from "./header";
 import LeftSection from "./leftSection";
 import RightSection from "./rightSection";
 import effect from "../../static/s.svg";
-import useBreakpoint from "../../utilities/mediaQuery";
-import { Link } from "react-scroll";
+import useBreakpoint from "../../utilities/mediaQuery"
 
 export default function Intro() {
   const isSmallScreen = useBreakpoint(770);
@@ -34,7 +25,7 @@ export default function Intro() {
         <LeftSection />
         <RightSection />
       </Body>
-      <Wrapper>
+      {/*<Wrapper>
         <ContentTitle>More statistics</ContentTitle>
         <StatisticsContainer>
           <ContentContainer>
@@ -75,14 +66,14 @@ export default function Intro() {
             </Description>
           </ContentContainer>
         </StatisticsContainer>
-      </Wrapper>
+            </Wrapper>
       <BottomText>
         we've worked with industry
         <br /> leading brands.
       </BottomText>
       <BottomSmallText>
         In recognition of consistently generating exceptional client results.
-      </BottomSmallText>
+      </BottomSmallText>*/}
     </Container>
   );
 }

@@ -14,7 +14,7 @@ export const Container = styled.div`
   }
 `;
 export const Wrapper = styled.div`
-  width: 75%;
+  width: 85%;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -101,7 +101,7 @@ export const Counter = styled.span`
   color: white;
   font-weight:600;
   margin-left: 10%;
-  margin-top: 20%;
+  margin-top: 10%;
   @media (max-width: 770px) {
     font-size:27px;
   }
@@ -119,7 +119,7 @@ export const Title = styled.span`
 `;
 
 export const Description = styled.span`
-  font-size: 15px;
+  font-size: 20px;
   color: white;
   font-weight:400;
   margin-left: 10%;

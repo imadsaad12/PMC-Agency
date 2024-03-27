@@ -37,7 +37,6 @@ export default function Home() {
     <Container>
       <Intro />
       <Services />
-      <CaseStudies />
       <Steps  targetRef={stepsRef} inView={stepsInView} />
       <ContactUs />
       <Form />

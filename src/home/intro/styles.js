@@ -35,6 +35,15 @@ export const Divider = styled.div`
   left: 50%;
 `;
 
+export const DividerHeader = styled.div`
+  width: 5px;
+  height: 25vh;
+  position: absolute;
+  background-color: black;
+  transform: rotate(15deg);
+  left: 57.2%;
+`;
+
 export const EffectsTop = styled.img`
   position: absolute;
   top: -90px;
@@ -145,6 +154,7 @@ export const Button = styled.button`
 export const BottomText = styled.p`
   font-size: 40px;
   font-weight: bold;
+  margin-top: 10%;
   text-align: center;
   color: white;
   text-transform: capitalize;
